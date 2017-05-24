@@ -5,10 +5,13 @@ import { HttpModule } from '@angular/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import {CornerstoneService} from "./services/cornerstone.service";
+import {CornerstoneDirective} from "./directives/cornerstone.directive";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CornerstoneDirective
   ],
   imports: [
     BrowserModule,
@@ -16,7 +19,7 @@ import { AppComponent } from './app.component';
     HttpModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [CornerstoneService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

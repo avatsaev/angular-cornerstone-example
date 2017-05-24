@@ -1,4 +1,18 @@
-<h1>
-  {{title}}
-</h1>
+
+
+<div id="dicomWrapper"
+
+     class='disable-selection noIbar'
+     unselectable='on'
+     onselectstart='return false;'
+     onmousedown='return false;'>
+
+  <div cornerstone
+       [image]="imageData"
+       id="dicomImage"
+       style="">
+  </div>
+
+</div>
+
 <router-outlet></router-outlet>
